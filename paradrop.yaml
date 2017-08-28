@@ -1,0 +1,8 @@
+type: light
+use: python2
+command: python -m helloworld.server -p 5000
+
+config:
+  name: hello-world-python2
+  web:
+    port: 5000
