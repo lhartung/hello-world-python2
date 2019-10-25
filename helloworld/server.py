@@ -1,7 +1,7 @@
 from flask import Flask
 import sys
 import optparse
-import time
+import time # imported libaries
 
 app = Flask(__name__)
 
@@ -16,9 +16,9 @@ def main():
     parser.add_option('-p', '--port', action='store', dest='port', help='The port to listen on.')
     (args, _) = parser.parse_args()
     if args.port == None:
-        print "Missing required argument: -p/--port"
+        print ("Missing required argument: -p/--port")
         sys.exit(1)
     app.run(host='0.0.0.0', port=int(args.port), debug=False)
 
-if __name__ == '__main__':
+if __name__ == '__main__':#If function is being used here
     main()
